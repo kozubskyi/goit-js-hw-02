@@ -1,19 +1,30 @@
 // 'use strict';
 
-const logins = [];
+const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 
 const isLoginValid = function(login) {
   if (login < 4 || login > 16) {
-    return 'Ошибка! Логин должен быть от 4 до 16 символов';
+    console.log('Ошибка! Логин должен быть от 4 до 16 символов');
+    return false;
   }
+  return true;
 };
 
 const isLoginUnique = function(allLogins, login) {
-
+  for (let i = 0; i < logins.length; i += 1) {
+    if (login === logins[i]) {
+      console.log('Такой логин уже используется!');
+      return false;
+    }
+    return true;
+  }
 };
 
 const addLogin = function(allLogins, login) {
-  // твой код
+  if (login isValid && login isUnique) {
+    logins.push(login);
+    console.log('Логин успешно добавлен!');
+  }
 };
 
 /*
