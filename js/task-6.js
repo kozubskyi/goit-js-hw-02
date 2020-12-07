@@ -4,8 +4,10 @@ let total = 0;
 
 while (true) {
 
-  let input = prompt('Введіть число');
   const numbers = [];
+  let input = prompt('Введіть число');
+
+  console.log(input);
 
   if (input === null) {
     break;
