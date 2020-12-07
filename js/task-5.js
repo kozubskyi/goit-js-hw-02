@@ -2,11 +2,15 @@
 
 const checkForSpam = function (message) {
   message = message.toLowerCase();
-  let messageArray = message.split(' ')
 
-  console.log(messageArray);
+  // if (message.includes('sale' || 'spam')) {
+  //   return true;
+  // } // Почему не работает || ?
 
-  if (messageArray.includes('sale' || 'spam')) {
+  if (message.includes('sale')) {
+    return true;
+  }
+  else if (message.includes('spam')) {
     return true;
   }
   
