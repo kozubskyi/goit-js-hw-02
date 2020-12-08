@@ -7,12 +7,16 @@ const checkForSpam = function (message) {
   //   return true;
   // } // Почему не работает || ?
 
-  if (message.includes('sale')) {
+  if (message.includes('sale') || message.includes('spam')) {
     return true;
   }
-  else if (message.includes('spam')) {
-    return true;
-  }
+
+  // if (message.includes('sale')) {
+  //   return true;
+  // }
+  // else if (message.includes('spam')) {
+  //   return true;
+  // }
   
   return false;
 }
