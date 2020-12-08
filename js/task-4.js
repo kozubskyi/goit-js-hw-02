@@ -3,12 +3,9 @@
 const formatString = function (string) {
   
   if (string.length > 40) {
-    let stringArray = string.split('');
-    stringArray.splice(40);
-    stringArray.push('...');
-    string = stringArray.join('');
+    string = string.slice(0, 40) + '...';
   }
-
+  
   return string;
 }
 
