@@ -12,12 +12,6 @@ while (true) {
 
   input = Number(input);
 
-  // if (input === NaN) {
-  //   alert('Було написано не число, спробуйте ще раз');
-  //   continue;    
-  // }
-  // Почему код выше не работает?
-
   const notANumber = Number.isNaN(input);
   if (notANumber) {
     alert('Було написано не число, спробуйте ще раз');
