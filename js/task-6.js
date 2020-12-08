@@ -1,9 +1,9 @@
 // 'use strict';
 
 let total = 0;
+const numbers = [];
 
 while (true) {
-  const numbers = [];
   let input = prompt('Введіть число');
 
   if (input === null) {
@@ -19,13 +19,11 @@ while (true) {
   }
 
   numbers.push(input);
+  console.log(numbers);
 
   for (const number of numbers) {
     total += number;
   }
-  // for (let i = 0; i < numbers.length; i += 1) {
-  //   total += numbers[i];
-  // }
 }
 
 console.log(`Загальна сума чисел дорівнює ${total}`);
